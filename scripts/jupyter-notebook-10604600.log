@@ -1,0 +1,719 @@
+[I 11:41:42.809 LabApp] JupyterLab extension loaded from /home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab
+[I 11:41:42.809 LabApp] JupyterLab application directory is /home/baker02/miniconda3/envs/scRNA_env/share/jupyter/lab
+[I 11:41:43.083 LabApp] [Jupytext Server Extension] Deriving a JupytextContentsManager from LargeFileManager
+[I 11:41:43.085 LabApp] Serving notebooks from local directory: /mnt/scratcha/fmlab/baker02/ER_Model/E2V2/Initial_ER_Interactome_Network_Model
+[I 11:41:43.085 LabApp] The Jupyter Notebook is running at:
+[I 11:41:43.085 LabApp] http://clust1-node-10:9203/
+[I 11:41:43.085 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 11:41:57.973 LabApp] 302 GET / (10.20.236.34) 0.73ms
+[I 11:41:58.024 LabApp] 302 GET /lab? (10.20.236.34) 1.39ms
+[W 11:42:04.227 LabApp] 401 POST /login?next=%2Flab%3F (10.20.236.34) 2.04ms referer=http://localhost:9203/login?next=%2Flab%3F
+[I 11:42:08.777 LabApp] 302 POST /login?next=%2Flab%3F (10.20.236.34) 1.49ms
+[W 11:42:11.008 LabApp] Could not determine jupyterlab build status without nodejs
+[W 11:42:11.568 LabApp] 404 GET /api/contents/notebooks/001_Extracting_Guide_Barcodes.ipynb?content=0&1596019331485 (10.20.236.34): No such file or directory: notebooks/001_Extracting_Guide_Barcodes.ipynb
+[W 11:42:11.569 LabApp] No such file or directory: notebooks/001_Extracting_Guide_Barcodes.ipynb
+[W 11:42:11.569 LabApp] 404 GET /api/contents/notebooks/001_Extracting_Guide_Barcodes.ipynb?content=0&1596019331485 (10.20.236.34) 1.79ms referer=http://localhost:9203/lab?
+[W 11:42:11.575 LabApp] 404 GET /api/contents/notebooks/005_Visualization_and_Differential_Expression.ipynb?content=0&1596019331489 (10.20.236.34): No such file or directory: notebooks/005_Visualization_and_Differential_Expression.ipynb
+[W 11:42:11.575 LabApp] No such file or directory: notebooks/005_Visualization_and_Differential_Expression.ipynb
+[W 11:42:11.575 LabApp] 404 GET /api/contents/notebooks/005_Visualization_and_Differential_Expression.ipynb?content=0&1596019331489 (10.20.236.34) 1.52ms referer=http://localhost:9203/lab?
+[W 11:42:11.587 LabApp] 404 GET /api/contents/notebooks/003_gRNA_Assignment.ipynb?content=0&1596019331487 (10.20.236.34): No such file or directory: notebooks/003_gRNA_Assignment.ipynb
+[W 11:42:11.587 LabApp] No such file or directory: notebooks/003_gRNA_Assignment.ipynb
+[W 11:42:11.587 LabApp] 404 GET /api/contents/notebooks/003_gRNA_Assignment.ipynb?content=0&1596019331487 (10.20.236.34) 1.59ms referer=http://localhost:9203/lab?
+[W 11:42:11.609 LabApp] 404 GET /api/contents/notebooks/004_QC_and_Merge_Samples.ipynb?content=0&1596019331488 (10.20.236.34): No such file or directory: notebooks/004_QC_and_Merge_Samples.ipynb
+[W 11:42:11.609 LabApp] No such file or directory: notebooks/004_QC_and_Merge_Samples.ipynb
+[W 11:42:11.609 LabApp] 404 GET /api/contents/notebooks/004_QC_and_Merge_Samples.ipynb?content=0&1596019331488 (10.20.236.34) 1.52ms referer=http://localhost:9203/lab?
+[W 11:42:11.619 LabApp] 404 GET /api/contents/notebooks/006_perturbation_qc.ipynb?content=0&1596019331490 (10.20.236.34): No such file or directory: notebooks/006_perturbation_qc.ipynb
+[W 11:42:11.619 LabApp] No such file or directory: notebooks/006_perturbation_qc.ipynb
+[W 11:42:11.620 LabApp] 404 GET /api/contents/notebooks/006_perturbation_qc.ipynb?content=0&1596019331490 (10.20.236.34) 1.54ms referer=http://localhost:9203/lab?
+[E 11:42:12.475 LabApp] Uncaught exception GET /lab/api/extensions?1596019331457 (10.20.236.34)
+    HTTPServerRequest(protocol='http', host='localhost:9203', method='GET', uri='/lab/api/extensions?1596019331457', version='HTTP/1.1', remote_ip='10.20.236.34')
+    Traceback (most recent call last):
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 194, in _load_outdated
+        app_options=self.app_options
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+        return self.__get_result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+        raise self._exception
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+        result = self.fn(*self.args, **self.kwargs)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/commands.py", line 541, in get_latest_compatible_package_versions
+        return handler.latest_compatible_package_versions(names)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/commands.py", line 1679, in latest_compatible_package_versions
+        ret = self._run([which('npm'), 'pack'] + keys, cwd=tempdir)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab_server/process.py", line 59, in which
+        raise ValueError(msg)
+    ValueError: Please install Node.js and npm before continuing installation. You may be able to install Node.js from your package manager, from conda, or directly from the Node.js website (https://nodejs.org).
+[W 11:42:12.504 LabApp] Unhandled error
+[E 11:42:12.504 LabApp] {
+      "Host": "localhost:9203",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0",
+      "Accept": "*/*",
+      "Accept-Language": "en-GB,en;q=0.5",
+      "Accept-Encoding": "gzip, deflate",
+      "Referer": "http://localhost:9203/lab?",
+      "X-Xsrftoken": "2|5a20104c|374a5a565a09906f2ac51980a6f75ba9|1595847021",
+      "Content-Type": "application/json",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-8888=\"2|1:0|10:1595841276|23:username-localhost-8888|44:YThlZjhiMzAwNDVkNDEyNThhY2JmN2RkMTE1N2Q3NGY=|db2fbf8a2d5ec874efe4b534a78e6f8e17bf592b36a99cce94e5dd9c40ee78d9\"; username-localhost-8889=\"2|1:0|10:1595567059|23:username-localhost-8889|44:NWE0ZTA1OGE3OWNiNGM2MmI1YmI4ZTA0ZWI2Y2I1NTE=|76c9675bf392d0453165139f2a25f7404335426b0317b95205e528757c22156e\"; username-localhost-9417=\"2|1:0|10:1593508551|23:username-localhost-9417|44:OTNkZmJjYjVkMTkzNGYzYThlMTgxZGY0YTA0MWM2MjE=|6f87eaacf3f41aa24cfa1e979ca16c55663fde2aea03d9fefa05177e1b55e7ec\"; username-localhost-8699=\"2|1:0|10:1594032249|23:username-localhost-8699|44:NWZjYzBkMzk0ZWNiNGY4Mzg2NGQ1MjVkMzU5YzQ3ZjU=|2fee082dba01bd027ba8056b60c407a1848c9312029fb606debc117d19bfe0eb\"; username-localhost-9681=\"2|1:0|10:1594113120|23:username-localhost-9681|44:ODA2MmQzZTFkZjg5NGM3OTk2NTI5OTc1MzM0MmJiNGU=|e9965ba9a2c4a5573c5d62d0825d4cbcfe57be38e5dd951b181938a135674779\"; username-localhost-9953=\"2|1:0|10:1594113126|23:username-localhost-9953|44:NWJiMGQ4MmE0YWNmNDM1Mjk0M2VhOTJjOTE0N2Q5NjY=|78b2309db5b3ea5309e123cc9e54b4c06f89c83af11c14f5981881539cc67294\"; username-localhost-8188=\"2|1:0|10:1594285485|23:username-localhost-8188|44:M2ExYWNkNDkwZjRhNGI5YWIwNmMwNDg5N2FiNGJlMDY=|5044ac673f094501803dea2bbad3298e35110b8ccbaeef26f1b478fac9baa5f2\"; username-localhost-9172=\"2|1:0|10:1594285490|23:username-localhost-9172|44:ZWQ0NDU0YmZiMjM0NDhjMmFiODFlNmE3YmJjOWYxZmY=|4e5ee11154fe92b2c4425421618dae7dc88c66730faead3debc16c9e69afc6fb\"; username-localhost-9135=\"2|1:0|10:1594630739|23:username-localhost-9135|44:MGJkZjUxMzk2ZDYwNGZkYzkwMTMxMTA2M2JkZmJmNzU=|d8d51e471ed8870c0c6581b2b14e7d32d46f06670d0919d744cfb18ff21b2372\"; username-localhost-8904=\"2|1:0|10:1594722669|23:username-localhost-8904|44:NjAzOGYxYjgzOGJlNDdjYzk1NTYxNWFjOTU1YzFmMmQ=|e73c1cd7b7f12c46ba20baf70cef1cc0f84d6a0a7c7889a5644b33dcabedcbe9\"; username-localhost-8890=\"2|1:0|10:1594744655|23:username-localhost-8890|44:MjkzYzgwMzZiZDg5NGE3Zjg5MDc2OTZmMTQ3YjZiZTU=|cf0bf944819bc1ade13a81d3273913779c8f49f43c06336aa4b1dc14d5a90a22\"; username-localhost-8967=\"2|1:0|10:1594807904|23:username-localhost-8967|44:NDkyZTcwZGZlNjQxNDdlNzk1ZTkzODA3ZGU2YzNiOTg=|343c54f4ac636e03622b2c5ab302a5e49e75ed4f9f96520d48959622a55ffdba\"; username-localhost-9949=\"2|1:0|10:1594816672|23:username-localhost-9949|44:YTg2YzU1NTA0NTQ2NDIxMzljNjFiMjAzNzZlZThhZWQ=|23e5b5d82a3261dd40f9b978cd0d57b8fedfe61a4a0e2a91fb0edf0e6cfc4294\"; username-localhost-8891=\"2|1:0|10:1594827687|23:username-localhost-8891|44:NWY3MzM5NDQ0ZDU4NDY5MzhjY2ExM2QxY2M1MWQzMTk=|f839c22190faa9f3021021f858a640400cc74bba2a2b49d77bb61e012dd7a72a\"; username-localhost-8892=\"2|1:0|10:1594875714|23:username-localhost-8892|44:YTE0YTA3MmE4NGRkNGUxMGEzYzQ4ZDJhYmI1NzhiNDY=|4ac29e85ae8004fd67420e155fafffbe283aac8e5d1768ecf427ce82e63f4630\"; username-localhost-8951=\"2|1:0|10:1594892710|23:username-localhost-8951|44:MmFmYzU5ZDlkOTNiNGJjYjg5OTk4OTAwY2YxMjJiMTc=|1be4579f1c133c14ee070fca8bffe4ce0a893e044a3bcaf93e28a771d273e66b\"; username-localhost-8899=\"2|1:0|10:1594978266|23:username-localhost-8899|44:YmI3YWI3NWM4NWVjNDJiZDlkMDE4YmJlMzFkYTgzZmE=|892b5a77992c2ccb2ff5c82370f5befe051967e49a39ebca5141bd624970addb\"; username-localhost-9491=\"2|1:0|10:1594978674|23:username-localhost-9491|44:MmMxZDI5NmE1YjcyNGNiYjg3OTAyNDE4MzBlMWEzOTY=|40b91d894be2dcc3c9d0b65e2e06ec9976c99ad359479b0a14ffc4aac1edd8f0\"; username-localhost-8882=\"2|1:0|10:1594994875|23:username-localhost-8882|44:N2RmYzBhNDg4MWNlNDA3ZDlmZWJjNzA3MGMwZWIxMzI=|5d82b07f7f74222817b9beec35db8c79cf94a82052440a0b21af0e19859ed1f8\"; username-localhost-8982=\"2|1:0|10:1595187716|23:username-localhost-8982|44:ODcwZTY4MjBiYzdkNDA1MDg5NDg2NGUzZjkyZjM2NWI=|37379ca64a01a81331726e3f38792696c6ee4a3fbc2ca325506b559a8af76324\"; username-localhost-9024=\"2|1:0|10:1595236822|23:username-localhost-9024|44:YzRlMTUwNjcxYjMwNDU0N2E3NjUxM2NkM2M3NDY4OTQ=|01be2ed68d7d3da961d45b8844585dc618f6b147f58535ae64d7712937e14cd8\"; username-localhost-8937=\"2|1:0|10:1595269727|23:username-localhost-8937|44:NzZkOGRlNGRlMDQwNGY0NjlmYTVkM2ZiODJiYmZjZGU=|0f4cdfa051265fc934c17a636ddd97296d83ece9c3df24bace8987f3a62b20e8\"; username-localhost-8318=\"2|1:0|10:1595324714|23:username-localhost-8318|44:MjMwMjBhN2Y1YjkwNDA3ODg3YTRiMDg3MmY3ZTk4MTg=|bcdde59d5c88c6b7c2b31a762722a5a5e8adb97a98b1635bd3511809ed7f96c3\"; username-localhost-9558=\"2|1:0|10:1595409209|23:username-localhost-9558|44:YTgxNGU0ZDE2YmNiNDdlOGE2NjNjMzdhNzRiZTI1Y2Y=|f9e53fcc7ce0a0c99adbcba3441b6b94566c34480ff8a59e543c0d5c2c4dfd76\"; username-localhost-9093=\"2|1:0|10:1595497666|23:username-localhost-9093|44:NTdlOTUxYTRmMDM4NGFjODg2NmU0ZGI0ZWUxOWRjMjI=|36ee4109710b6f9600b57e4216656c51f1d94b6f45aff4a28be09daa0a1295c8\"; username-localhost-9839=\"2|1:0|10:1595579728|23:username-localhost-9839|44:MmUyNzliODgyMmQ2NDY3NWI3N2Q5MWYyNzI0ZDlhMWI=|bbeb52f7fd890ea9d2a2d24ec85bc52a701522f99e2136d1147a8a61dd98d0a9\"; _xsrf=2|5a20104c|374a5a565a09906f2ac51980a6f75ba9|1595847021; username-localhost-9321=\"2|1:0|10:1595847025|23:username-localhost-9321|44:ZjNmZGVlN2UzZGIyNDdhZTg4YzMxZDA4ZTRkMzUxYTg=|2e6282f6ee38be1e9e5a4d869de2f5fb0c36047825c692abc6ad5b9a61299ec5\"; username-localhost-8938=\"2|1:0|10:1595913685|23:username-localhost-8938|44:ZmYzMGI3Yjg1ZWVmNDhiNzkxYTAwNmJkNzUwOGNmMmI=|00bfff247d0196ed67111d9fe271730db45908635c11eb826307aa241926d986\"; username-localhost-9203=\"2|1:0|10:1596019328|23:username-localhost-9203|44:M2Y1YzczMTA0ZjY0NGIyNWFjYzViZGRjYjJiMDgwZjI=|38ee3a55457d820d3acefde4865de9f1e66494016892d5fb90965946d5c3cf61\"",
+      "Pragma": "no-cache",
+      "Cache-Control": "no-cache"
+    }
+[E 11:42:12.504 LabApp] 500 GET /lab/api/extensions?1596019331457 (10.20.236.34) 959.48ms referer=http://localhost:9203/lab?
+[E 11:42:12.527 LabApp] Uncaught exception GET /lab/api/extensions?1596019332464 (10.20.236.34)
+    HTTPServerRequest(protocol='http', host='localhost:9203', method='GET', uri='/lab/api/extensions?1596019332464', version='HTTP/1.1', remote_ip='10.20.236.34')
+    Traceback (most recent call last):
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 194, in _load_outdated
+        app_options=self.app_options
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+        return self.__get_result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+        raise self._exception
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+        result = self.fn(*self.args, **self.kwargs)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/commands.py", line 541, in get_latest_compatible_package_versions
+        return handler.latest_compatible_package_versions(names)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/commands.py", line 1679, in latest_compatible_package_versions
+        ret = self._run([which('npm'), 'pack'] + keys, cwd=tempdir)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab_server/process.py", line 59, in which
+        raise ValueError(msg)
+    ValueError: Please install Node.js and npm before continuing installation. You may be able to install Node.js from your package manager, from conda, or directly from the Node.js website (https://nodejs.org).
+[W 11:42:12.528 LabApp] Unhandled error
+[E 11:42:12.529 LabApp] {
+      "Host": "localhost:9203",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0",
+      "Accept": "*/*",
+      "Accept-Language": "en-GB,en;q=0.5",
+      "Accept-Encoding": "gzip, deflate",
+      "Referer": "http://localhost:9203/lab?",
+      "X-Xsrftoken": "2|5a20104c|374a5a565a09906f2ac51980a6f75ba9|1595847021",
+      "Content-Type": "application/json",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-8888=\"2|1:0|10:1595841276|23:username-localhost-8888|44:YThlZjhiMzAwNDVkNDEyNThhY2JmN2RkMTE1N2Q3NGY=|db2fbf8a2d5ec874efe4b534a78e6f8e17bf592b36a99cce94e5dd9c40ee78d9\"; username-localhost-8889=\"2|1:0|10:1595567059|23:username-localhost-8889|44:NWE0ZTA1OGE3OWNiNGM2MmI1YmI4ZTA0ZWI2Y2I1NTE=|76c9675bf392d0453165139f2a25f7404335426b0317b95205e528757c22156e\"; username-localhost-9417=\"2|1:0|10:1593508551|23:username-localhost-9417|44:OTNkZmJjYjVkMTkzNGYzYThlMTgxZGY0YTA0MWM2MjE=|6f87eaacf3f41aa24cfa1e979ca16c55663fde2aea03d9fefa05177e1b55e7ec\"; username-localhost-8699=\"2|1:0|10:1594032249|23:username-localhost-8699|44:NWZjYzBkMzk0ZWNiNGY4Mzg2NGQ1MjVkMzU5YzQ3ZjU=|2fee082dba01bd027ba8056b60c407a1848c9312029fb606debc117d19bfe0eb\"; username-localhost-9681=\"2|1:0|10:1594113120|23:username-localhost-9681|44:ODA2MmQzZTFkZjg5NGM3OTk2NTI5OTc1MzM0MmJiNGU=|e9965ba9a2c4a5573c5d62d0825d4cbcfe57be38e5dd951b181938a135674779\"; username-localhost-9953=\"2|1:0|10:1594113126|23:username-localhost-9953|44:NWJiMGQ4MmE0YWNmNDM1Mjk0M2VhOTJjOTE0N2Q5NjY=|78b2309db5b3ea5309e123cc9e54b4c06f89c83af11c14f5981881539cc67294\"; username-localhost-8188=\"2|1:0|10:1594285485|23:username-localhost-8188|44:M2ExYWNkNDkwZjRhNGI5YWIwNmMwNDg5N2FiNGJlMDY=|5044ac673f094501803dea2bbad3298e35110b8ccbaeef26f1b478fac9baa5f2\"; username-localhost-9172=\"2|1:0|10:1594285490|23:username-localhost-9172|44:ZWQ0NDU0YmZiMjM0NDhjMmFiODFlNmE3YmJjOWYxZmY=|4e5ee11154fe92b2c4425421618dae7dc88c66730faead3debc16c9e69afc6fb\"; username-localhost-9135=\"2|1:0|10:1594630739|23:username-localhost-9135|44:MGJkZjUxMzk2ZDYwNGZkYzkwMTMxMTA2M2JkZmJmNzU=|d8d51e471ed8870c0c6581b2b14e7d32d46f06670d0919d744cfb18ff21b2372\"; username-localhost-8904=\"2|1:0|10:1594722669|23:username-localhost-8904|44:NjAzOGYxYjgzOGJlNDdjYzk1NTYxNWFjOTU1YzFmMmQ=|e73c1cd7b7f12c46ba20baf70cef1cc0f84d6a0a7c7889a5644b33dcabedcbe9\"; username-localhost-8890=\"2|1:0|10:1594744655|23:username-localhost-8890|44:MjkzYzgwMzZiZDg5NGE3Zjg5MDc2OTZmMTQ3YjZiZTU=|cf0bf944819bc1ade13a81d3273913779c8f49f43c06336aa4b1dc14d5a90a22\"; username-localhost-8967=\"2|1:0|10:1594807904|23:username-localhost-8967|44:NDkyZTcwZGZlNjQxNDdlNzk1ZTkzODA3ZGU2YzNiOTg=|343c54f4ac636e03622b2c5ab302a5e49e75ed4f9f96520d48959622a55ffdba\"; username-localhost-9949=\"2|1:0|10:1594816672|23:username-localhost-9949|44:YTg2YzU1NTA0NTQ2NDIxMzljNjFiMjAzNzZlZThhZWQ=|23e5b5d82a3261dd40f9b978cd0d57b8fedfe61a4a0e2a91fb0edf0e6cfc4294\"; username-localhost-8891=\"2|1:0|10:1594827687|23:username-localhost-8891|44:NWY3MzM5NDQ0ZDU4NDY5MzhjY2ExM2QxY2M1MWQzMTk=|f839c22190faa9f3021021f858a640400cc74bba2a2b49d77bb61e012dd7a72a\"; username-localhost-8892=\"2|1:0|10:1594875714|23:username-localhost-8892|44:YTE0YTA3MmE4NGRkNGUxMGEzYzQ4ZDJhYmI1NzhiNDY=|4ac29e85ae8004fd67420e155fafffbe283aac8e5d1768ecf427ce82e63f4630\"; username-localhost-8951=\"2|1:0|10:1594892710|23:username-localhost-8951|44:MmFmYzU5ZDlkOTNiNGJjYjg5OTk4OTAwY2YxMjJiMTc=|1be4579f1c133c14ee070fca8bffe4ce0a893e044a3bcaf93e28a771d273e66b\"; username-localhost-8899=\"2|1:0|10:1594978266|23:username-localhost-8899|44:YmI3YWI3NWM4NWVjNDJiZDlkMDE4YmJlMzFkYTgzZmE=|892b5a77992c2ccb2ff5c82370f5befe051967e49a39ebca5141bd624970addb\"; username-localhost-9491=\"2|1:0|10:1594978674|23:username-localhost-9491|44:MmMxZDI5NmE1YjcyNGNiYjg3OTAyNDE4MzBlMWEzOTY=|40b91d894be2dcc3c9d0b65e2e06ec9976c99ad359479b0a14ffc4aac1edd8f0\"; username-localhost-8882=\"2|1:0|10:1594994875|23:username-localhost-8882|44:N2RmYzBhNDg4MWNlNDA3ZDlmZWJjNzA3MGMwZWIxMzI=|5d82b07f7f74222817b9beec35db8c79cf94a82052440a0b21af0e19859ed1f8\"; username-localhost-8982=\"2|1:0|10:1595187716|23:username-localhost-8982|44:ODcwZTY4MjBiYzdkNDA1MDg5NDg2NGUzZjkyZjM2NWI=|37379ca64a01a81331726e3f38792696c6ee4a3fbc2ca325506b559a8af76324\"; username-localhost-9024=\"2|1:0|10:1595236822|23:username-localhost-9024|44:YzRlMTUwNjcxYjMwNDU0N2E3NjUxM2NkM2M3NDY4OTQ=|01be2ed68d7d3da961d45b8844585dc618f6b147f58535ae64d7712937e14cd8\"; username-localhost-8937=\"2|1:0|10:1595269727|23:username-localhost-8937|44:NzZkOGRlNGRlMDQwNGY0NjlmYTVkM2ZiODJiYmZjZGU=|0f4cdfa051265fc934c17a636ddd97296d83ece9c3df24bace8987f3a62b20e8\"; username-localhost-8318=\"2|1:0|10:1595324714|23:username-localhost-8318|44:MjMwMjBhN2Y1YjkwNDA3ODg3YTRiMDg3MmY3ZTk4MTg=|bcdde59d5c88c6b7c2b31a762722a5a5e8adb97a98b1635bd3511809ed7f96c3\"; username-localhost-9558=\"2|1:0|10:1595409209|23:username-localhost-9558|44:YTgxNGU0ZDE2YmNiNDdlOGE2NjNjMzdhNzRiZTI1Y2Y=|f9e53fcc7ce0a0c99adbcba3441b6b94566c34480ff8a59e543c0d5c2c4dfd76\"; username-localhost-9093=\"2|1:0|10:1595497666|23:username-localhost-9093|44:NTdlOTUxYTRmMDM4NGFjODg2NmU0ZGI0ZWUxOWRjMjI=|36ee4109710b6f9600b57e4216656c51f1d94b6f45aff4a28be09daa0a1295c8\"; username-localhost-9839=\"2|1:0|10:1595579728|23:username-localhost-9839|44:MmUyNzliODgyMmQ2NDY3NWI3N2Q5MWYyNzI0ZDlhMWI=|bbeb52f7fd890ea9d2a2d24ec85bc52a701522f99e2136d1147a8a61dd98d0a9\"; _xsrf=2|5a20104c|374a5a565a09906f2ac51980a6f75ba9|1595847021; username-localhost-9321=\"2|1:0|10:1595847025|23:username-localhost-9321|44:ZjNmZGVlN2UzZGIyNDdhZTg4YzMxZDA4ZTRkMzUxYTg=|2e6282f6ee38be1e9e5a4d869de2f5fb0c36047825c692abc6ad5b9a61299ec5\"; username-localhost-8938=\"2|1:0|10:1595913685|23:username-localhost-8938|44:ZmYzMGI3Yjg1ZWVmNDhiNzkxYTAwNmJkNzUwOGNmMmI=|00bfff247d0196ed67111d9fe271730db45908635c11eb826307aa241926d986\"; username-localhost-9203=\"2|1:0|10:1596019328|23:username-localhost-9203|44:M2Y1YzczMTA0ZjY0NGIyNWFjYzViZGRjYjJiMDgwZjI=|38ee3a55457d820d3acefde4865de9f1e66494016892d5fb90965946d5c3cf61\"",
+      "Pragma": "no-cache",
+      "Cache-Control": "no-cache"
+    }
+[E 11:42:12.529 LabApp] 500 GET /lab/api/extensions?1596019332464 (10.20.236.34) 9.34ms referer=http://localhost:9203/lab?
+[I 11:47:19.123 LabApp] Kernel started: 75c0bedc-4c25-4105-86ba-f6606bf93973
+[I 11:47:20.080 LabApp] Adapting from protocol version 5.0 (kernel 75c0bedc-4c25-4105-86ba-f6606bf93973) to 5.3 (client).
+[I 11:47:20.185 LabApp] Adapting from protocol version 5.0 (kernel 75c0bedc-4c25-4105-86ba-f6606bf93973) to 5.3 (client).
+[I 11:47:21.975 LabApp] Kernel started: fc95bad2-4733-410a-a796-c7a0b815f189
+[I 11:47:22.577 LabApp] Adapting from protocol version 5.0 (kernel fc95bad2-4733-410a-a796-c7a0b815f189) to 5.3 (client).
+[I 11:48:53.171 LabApp] Saving file at /notebooks/004_etl_dev.ipynb
+[I 11:48:53.172 LabApp] Saving 004_etl_dev.ipynb
+[I 11:50:19.870 LabApp] Saving file at /notebooks/004_etl_dev.ipynb
+[I 11:50:19.871 LabApp] Saving 004_etl_dev.ipynb
+[I 11:50:26.648 LabApp] Saving file at /notebooks/004_etl_dev.ipynb
+[I 11:50:26.649 LabApp] Saving 004_etl_dev.ipynb
+[I 11:52:26.836 LabApp] Saving file at /notebooks/004_etl_dev.ipynb
+[I 11:52:26.838 LabApp] Saving 004_etl_dev.ipynb
+[I 11:52:34.232 LabApp] Saving file at /notebooks/004_etl_dev.ipynb
+[I 11:52:34.233 LabApp] Saving 004_etl_dev.ipynb
+[I 12:02:33.419 LabApp] Starting buffering for fc95bad2-4733-410a-a796-c7a0b815f189:be56cc7b-d43a-4330-a7a9-2f5e3ffe7af7
+[I 12:02:33.420 LabApp] Starting buffering for 75c0bedc-4c25-4105-86ba-f6606bf93973:3e7f3476-7da8-415f-942e-db53e8cbc87d
+[W 12:02:46.213 LabApp] Could not determine jupyterlab build status without nodejs
+[I 12:02:47.427 LabApp] Adapting from protocol version 5.0 (kernel fc95bad2-4733-410a-a796-c7a0b815f189) to 5.3 (client).
+[I 12:02:49.439 LabApp] Starting buffering for fc95bad2-4733-410a-a796-c7a0b815f189:93f289fc-7b14-41e6-962c-23260ebdda27
+[E 12:02:50.848 LabApp] Uncaught exception GET /lab/api/extensions?1596020569427 (10.20.236.34)
+    HTTPServerRequest(protocol='http', host='localhost:9203', method='GET', uri='/lab/api/extensions?1596020569427', version='HTTP/1.1', remote_ip='10.20.236.34')
+    Traceback (most recent call last):
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 194, in _load_outdated
+        app_options=self.app_options
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+        return self.__get_result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+        raise self._exception
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+        result = self.fn(*self.args, **self.kwargs)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/commands.py", line 541, in get_latest_compatible_package_versions
+        return handler.latest_compatible_package_versions(names)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/commands.py", line 1679, in latest_compatible_package_versions
+        ret = self._run([which('npm'), 'pack'] + keys, cwd=tempdir)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab_server/process.py", line 59, in which
+        raise ValueError(msg)
+    ValueError: Please install Node.js and npm before continuing installation. You may be able to install Node.js from your package manager, from conda, or directly from the Node.js website (https://nodejs.org).
+[W 12:02:50.850 LabApp] Unhandled error
+[E 12:02:50.850 LabApp] {
+      "Host": "localhost:9203",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0",
+      "Accept": "*/*",
+      "Accept-Language": "en-GB,en;q=0.5",
+      "Accept-Encoding": "gzip, deflate",
+      "Referer": "http://localhost:9203/lab",
+      "X-Xsrftoken": "2|5a20104c|374a5a565a09906f2ac51980a6f75ba9|1595847021",
+      "Content-Type": "application/json",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-8888=\"2|1:0|10:1595841276|23:username-localhost-8888|44:YThlZjhiMzAwNDVkNDEyNThhY2JmN2RkMTE1N2Q3NGY=|db2fbf8a2d5ec874efe4b534a78e6f8e17bf592b36a99cce94e5dd9c40ee78d9\"; username-localhost-8889=\"2|1:0|10:1595567059|23:username-localhost-8889|44:NWE0ZTA1OGE3OWNiNGM2MmI1YmI4ZTA0ZWI2Y2I1NTE=|76c9675bf392d0453165139f2a25f7404335426b0317b95205e528757c22156e\"; username-localhost-9417=\"2|1:0|10:1593508551|23:username-localhost-9417|44:OTNkZmJjYjVkMTkzNGYzYThlMTgxZGY0YTA0MWM2MjE=|6f87eaacf3f41aa24cfa1e979ca16c55663fde2aea03d9fefa05177e1b55e7ec\"; username-localhost-8699=\"2|1:0|10:1594032249|23:username-localhost-8699|44:NWZjYzBkMzk0ZWNiNGY4Mzg2NGQ1MjVkMzU5YzQ3ZjU=|2fee082dba01bd027ba8056b60c407a1848c9312029fb606debc117d19bfe0eb\"; username-localhost-9681=\"2|1:0|10:1594113120|23:username-localhost-9681|44:ODA2MmQzZTFkZjg5NGM3OTk2NTI5OTc1MzM0MmJiNGU=|e9965ba9a2c4a5573c5d62d0825d4cbcfe57be38e5dd951b181938a135674779\"; username-localhost-9953=\"2|1:0|10:1594113126|23:username-localhost-9953|44:NWJiMGQ4MmE0YWNmNDM1Mjk0M2VhOTJjOTE0N2Q5NjY=|78b2309db5b3ea5309e123cc9e54b4c06f89c83af11c14f5981881539cc67294\"; username-localhost-8188=\"2|1:0|10:1594285485|23:username-localhost-8188|44:M2ExYWNkNDkwZjRhNGI5YWIwNmMwNDg5N2FiNGJlMDY=|5044ac673f094501803dea2bbad3298e35110b8ccbaeef26f1b478fac9baa5f2\"; username-localhost-9172=\"2|1:0|10:1594285490|23:username-localhost-9172|44:ZWQ0NDU0YmZiMjM0NDhjMmFiODFlNmE3YmJjOWYxZmY=|4e5ee11154fe92b2c4425421618dae7dc88c66730faead3debc16c9e69afc6fb\"; username-localhost-9135=\"2|1:0|10:1594630739|23:username-localhost-9135|44:MGJkZjUxMzk2ZDYwNGZkYzkwMTMxMTA2M2JkZmJmNzU=|d8d51e471ed8870c0c6581b2b14e7d32d46f06670d0919d744cfb18ff21b2372\"; username-localhost-8904=\"2|1:0|10:1594722669|23:username-localhost-8904|44:NjAzOGYxYjgzOGJlNDdjYzk1NTYxNWFjOTU1YzFmMmQ=|e73c1cd7b7f12c46ba20baf70cef1cc0f84d6a0a7c7889a5644b33dcabedcbe9\"; username-localhost-8890=\"2|1:0|10:1594744655|23:username-localhost-8890|44:MjkzYzgwMzZiZDg5NGE3Zjg5MDc2OTZmMTQ3YjZiZTU=|cf0bf944819bc1ade13a81d3273913779c8f49f43c06336aa4b1dc14d5a90a22\"; username-localhost-8967=\"2|1:0|10:1594807904|23:username-localhost-8967|44:NDkyZTcwZGZlNjQxNDdlNzk1ZTkzODA3ZGU2YzNiOTg=|343c54f4ac636e03622b2c5ab302a5e49e75ed4f9f96520d48959622a55ffdba\"; username-localhost-9949=\"2|1:0|10:1594816672|23:username-localhost-9949|44:YTg2YzU1NTA0NTQ2NDIxMzljNjFiMjAzNzZlZThhZWQ=|23e5b5d82a3261dd40f9b978cd0d57b8fedfe61a4a0e2a91fb0edf0e6cfc4294\"; username-localhost-8891=\"2|1:0|10:1594827687|23:username-localhost-8891|44:NWY3MzM5NDQ0ZDU4NDY5MzhjY2ExM2QxY2M1MWQzMTk=|f839c22190faa9f3021021f858a640400cc74bba2a2b49d77bb61e012dd7a72a\"; username-localhost-8892=\"2|1:0|10:1594875714|23:username-localhost-8892|44:YTE0YTA3MmE4NGRkNGUxMGEzYzQ4ZDJhYmI1NzhiNDY=|4ac29e85ae8004fd67420e155fafffbe283aac8e5d1768ecf427ce82e63f4630\"; username-localhost-8951=\"2|1:0|10:1594892710|23:username-localhost-8951|44:MmFmYzU5ZDlkOTNiNGJjYjg5OTk4OTAwY2YxMjJiMTc=|1be4579f1c133c14ee070fca8bffe4ce0a893e044a3bcaf93e28a771d273e66b\"; username-localhost-8899=\"2|1:0|10:1594978266|23:username-localhost-8899|44:YmI3YWI3NWM4NWVjNDJiZDlkMDE4YmJlMzFkYTgzZmE=|892b5a77992c2ccb2ff5c82370f5befe051967e49a39ebca5141bd624970addb\"; username-localhost-9491=\"2|1:0|10:1594978674|23:username-localhost-9491|44:MmMxZDI5NmE1YjcyNGNiYjg3OTAyNDE4MzBlMWEzOTY=|40b91d894be2dcc3c9d0b65e2e06ec9976c99ad359479b0a14ffc4aac1edd8f0\"; username-localhost-8882=\"2|1:0|10:1594994875|23:username-localhost-8882|44:N2RmYzBhNDg4MWNlNDA3ZDlmZWJjNzA3MGMwZWIxMzI=|5d82b07f7f74222817b9beec35db8c79cf94a82052440a0b21af0e19859ed1f8\"; username-localhost-8982=\"2|1:0|10:1595187716|23:username-localhost-8982|44:ODcwZTY4MjBiYzdkNDA1MDg5NDg2NGUzZjkyZjM2NWI=|37379ca64a01a81331726e3f38792696c6ee4a3fbc2ca325506b559a8af76324\"; username-localhost-9024=\"2|1:0|10:1595236822|23:username-localhost-9024|44:YzRlMTUwNjcxYjMwNDU0N2E3NjUxM2NkM2M3NDY4OTQ=|01be2ed68d7d3da961d45b8844585dc618f6b147f58535ae64d7712937e14cd8\"; username-localhost-8937=\"2|1:0|10:1595269727|23:username-localhost-8937|44:NzZkOGRlNGRlMDQwNGY0NjlmYTVkM2ZiODJiYmZjZGU=|0f4cdfa051265fc934c17a636ddd97296d83ece9c3df24bace8987f3a62b20e8\"; username-localhost-8318=\"2|1:0|10:1595324714|23:username-localhost-8318|44:MjMwMjBhN2Y1YjkwNDA3ODg3YTRiMDg3MmY3ZTk4MTg=|bcdde59d5c88c6b7c2b31a762722a5a5e8adb97a98b1635bd3511809ed7f96c3\"; username-localhost-9558=\"2|1:0|10:1595409209|23:username-localhost-9558|44:YTgxNGU0ZDE2YmNiNDdlOGE2NjNjMzdhNzRiZTI1Y2Y=|f9e53fcc7ce0a0c99adbcba3441b6b94566c34480ff8a59e543c0d5c2c4dfd76\"; username-localhost-9093=\"2|1:0|10:1595497666|23:username-localhost-9093|44:NTdlOTUxYTRmMDM4NGFjODg2NmU0ZGI0ZWUxOWRjMjI=|36ee4109710b6f9600b57e4216656c51f1d94b6f45aff4a28be09daa0a1295c8\"; username-localhost-9839=\"2|1:0|10:1595579728|23:username-localhost-9839|44:MmUyNzliODgyMmQ2NDY3NWI3N2Q5MWYyNzI0ZDlhMWI=|bbeb52f7fd890ea9d2a2d24ec85bc52a701522f99e2136d1147a8a61dd98d0a9\"; _xsrf=2|5a20104c|374a5a565a09906f2ac51980a6f75ba9|1595847021; username-localhost-9321=\"2|1:0|10:1595847025|23:username-localhost-9321|44:ZjNmZGVlN2UzZGIyNDdhZTg4YzMxZDA4ZTRkMzUxYTg=|2e6282f6ee38be1e9e5a4d869de2f5fb0c36047825c692abc6ad5b9a61299ec5\"; username-localhost-8938=\"2|1:0|10:1595913685|23:username-localhost-8938|44:ZmYzMGI3Yjg1ZWVmNDhiNzkxYTAwNmJkNzUwOGNmMmI=|00bfff247d0196ed67111d9fe271730db45908635c11eb826307aa241926d986\"; username-localhost-9203=\"2|1:0|10:1596019328|23:username-localhost-9203|44:M2Y1YzczMTA0ZjY0NGIyNWFjYzViZGRjYjJiMDgwZjI=|38ee3a55457d820d3acefde4865de9f1e66494016892d5fb90965946d5c3cf61\"",
+      "Pragma": "no-cache",
+      "Cache-Control": "no-cache"
+    }
+[E 12:02:50.850 LabApp] 500 GET /lab/api/extensions?1596020569427 (10.20.236.34) 10.64ms referer=http://localhost:9203/lab
+[E 12:02:50.922 LabApp] Uncaught exception GET /lab/api/extensions?1596020570430 (10.20.236.34)
+    HTTPServerRequest(protocol='http', host='localhost:9203', method='GET', uri='/lab/api/extensions?1596020570430', version='HTTP/1.1', remote_ip='10.20.236.34')
+    Traceback (most recent call last):
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 194, in _load_outdated
+        app_options=self.app_options
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+        return self.__get_result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+        raise self._exception
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+        result = self.fn(*self.args, **self.kwargs)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/commands.py", line 541, in get_latest_compatible_package_versions
+        return handler.latest_compatible_package_versions(names)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/commands.py", line 1679, in latest_compatible_package_versions
+        ret = self._run([which('npm'), 'pack'] + keys, cwd=tempdir)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab_server/process.py", line 59, in which
+        raise ValueError(msg)
+    ValueError: Please install Node.js and npm before continuing installation. You may be able to install Node.js from your package manager, from conda, or directly from the Node.js website (https://nodejs.org).
+[W 12:02:50.923 LabApp] Unhandled error
+[E 12:02:50.923 LabApp] {
+      "Host": "localhost:9203",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0",
+      "Accept": "*/*",
+      "Accept-Language": "en-GB,en;q=0.5",
+      "Accept-Encoding": "gzip, deflate",
+      "Referer": "http://localhost:9203/lab",
+      "X-Xsrftoken": "2|5a20104c|374a5a565a09906f2ac51980a6f75ba9|1595847021",
+      "Content-Type": "application/json",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-8888=\"2|1:0|10:1595841276|23:username-localhost-8888|44:YThlZjhiMzAwNDVkNDEyNThhY2JmN2RkMTE1N2Q3NGY=|db2fbf8a2d5ec874efe4b534a78e6f8e17bf592b36a99cce94e5dd9c40ee78d9\"; username-localhost-8889=\"2|1:0|10:1595567059|23:username-localhost-8889|44:NWE0ZTA1OGE3OWNiNGM2MmI1YmI4ZTA0ZWI2Y2I1NTE=|76c9675bf392d0453165139f2a25f7404335426b0317b95205e528757c22156e\"; username-localhost-9417=\"2|1:0|10:1593508551|23:username-localhost-9417|44:OTNkZmJjYjVkMTkzNGYzYThlMTgxZGY0YTA0MWM2MjE=|6f87eaacf3f41aa24cfa1e979ca16c55663fde2aea03d9fefa05177e1b55e7ec\"; username-localhost-8699=\"2|1:0|10:1594032249|23:username-localhost-8699|44:NWZjYzBkMzk0ZWNiNGY4Mzg2NGQ1MjVkMzU5YzQ3ZjU=|2fee082dba01bd027ba8056b60c407a1848c9312029fb606debc117d19bfe0eb\"; username-localhost-9681=\"2|1:0|10:1594113120|23:username-localhost-9681|44:ODA2MmQzZTFkZjg5NGM3OTk2NTI5OTc1MzM0MmJiNGU=|e9965ba9a2c4a5573c5d62d0825d4cbcfe57be38e5dd951b181938a135674779\"; username-localhost-9953=\"2|1:0|10:1594113126|23:username-localhost-9953|44:NWJiMGQ4MmE0YWNmNDM1Mjk0M2VhOTJjOTE0N2Q5NjY=|78b2309db5b3ea5309e123cc9e54b4c06f89c83af11c14f5981881539cc67294\"; username-localhost-8188=\"2|1:0|10:1594285485|23:username-localhost-8188|44:M2ExYWNkNDkwZjRhNGI5YWIwNmMwNDg5N2FiNGJlMDY=|5044ac673f094501803dea2bbad3298e35110b8ccbaeef26f1b478fac9baa5f2\"; username-localhost-9172=\"2|1:0|10:1594285490|23:username-localhost-9172|44:ZWQ0NDU0YmZiMjM0NDhjMmFiODFlNmE3YmJjOWYxZmY=|4e5ee11154fe92b2c4425421618dae7dc88c66730faead3debc16c9e69afc6fb\"; username-localhost-9135=\"2|1:0|10:1594630739|23:username-localhost-9135|44:MGJkZjUxMzk2ZDYwNGZkYzkwMTMxMTA2M2JkZmJmNzU=|d8d51e471ed8870c0c6581b2b14e7d32d46f06670d0919d744cfb18ff21b2372\"; username-localhost-8904=\"2|1:0|10:1594722669|23:username-localhost-8904|44:NjAzOGYxYjgzOGJlNDdjYzk1NTYxNWFjOTU1YzFmMmQ=|e73c1cd7b7f12c46ba20baf70cef1cc0f84d6a0a7c7889a5644b33dcabedcbe9\"; username-localhost-8890=\"2|1:0|10:1594744655|23:username-localhost-8890|44:MjkzYzgwMzZiZDg5NGE3Zjg5MDc2OTZmMTQ3YjZiZTU=|cf0bf944819bc1ade13a81d3273913779c8f49f43c06336aa4b1dc14d5a90a22\"; username-localhost-8967=\"2|1:0|10:1594807904|23:username-localhost-8967|44:NDkyZTcwZGZlNjQxNDdlNzk1ZTkzODA3ZGU2YzNiOTg=|343c54f4ac636e03622b2c5ab302a5e49e75ed4f9f96520d48959622a55ffdba\"; username-localhost-9949=\"2|1:0|10:1594816672|23:username-localhost-9949|44:YTg2YzU1NTA0NTQ2NDIxMzljNjFiMjAzNzZlZThhZWQ=|23e5b5d82a3261dd40f9b978cd0d57b8fedfe61a4a0e2a91fb0edf0e6cfc4294\"; username-localhost-8891=\"2|1:0|10:1594827687|23:username-localhost-8891|44:NWY3MzM5NDQ0ZDU4NDY5MzhjY2ExM2QxY2M1MWQzMTk=|f839c22190faa9f3021021f858a640400cc74bba2a2b49d77bb61e012dd7a72a\"; username-localhost-8892=\"2|1:0|10:1594875714|23:username-localhost-8892|44:YTE0YTA3MmE4NGRkNGUxMGEzYzQ4ZDJhYmI1NzhiNDY=|4ac29e85ae8004fd67420e155fafffbe283aac8e5d1768ecf427ce82e63f4630\"; username-localhost-8951=\"2|1:0|10:1594892710|23:username-localhost-8951|44:MmFmYzU5ZDlkOTNiNGJjYjg5OTk4OTAwY2YxMjJiMTc=|1be4579f1c133c14ee070fca8bffe4ce0a893e044a3bcaf93e28a771d273e66b\"; username-localhost-8899=\"2|1:0|10:1594978266|23:username-localhost-8899|44:YmI3YWI3NWM4NWVjNDJiZDlkMDE4YmJlMzFkYTgzZmE=|892b5a77992c2ccb2ff5c82370f5befe051967e49a39ebca5141bd624970addb\"; username-localhost-9491=\"2|1:0|10:1594978674|23:username-localhost-9491|44:MmMxZDI5NmE1YjcyNGNiYjg3OTAyNDE4MzBlMWEzOTY=|40b91d894be2dcc3c9d0b65e2e06ec9976c99ad359479b0a14ffc4aac1edd8f0\"; username-localhost-8882=\"2|1:0|10:1594994875|23:username-localhost-8882|44:N2RmYzBhNDg4MWNlNDA3ZDlmZWJjNzA3MGMwZWIxMzI=|5d82b07f7f74222817b9beec35db8c79cf94a82052440a0b21af0e19859ed1f8\"; username-localhost-8982=\"2|1:0|10:1595187716|23:username-localhost-8982|44:ODcwZTY4MjBiYzdkNDA1MDg5NDg2NGUzZjkyZjM2NWI=|37379ca64a01a81331726e3f38792696c6ee4a3fbc2ca325506b559a8af76324\"; username-localhost-9024=\"2|1:0|10:1595236822|23:username-localhost-9024|44:YzRlMTUwNjcxYjMwNDU0N2E3NjUxM2NkM2M3NDY4OTQ=|01be2ed68d7d3da961d45b8844585dc618f6b147f58535ae64d7712937e14cd8\"; username-localhost-8937=\"2|1:0|10:1595269727|23:username-localhost-8937|44:NzZkOGRlNGRlMDQwNGY0NjlmYTVkM2ZiODJiYmZjZGU=|0f4cdfa051265fc934c17a636ddd97296d83ece9c3df24bace8987f3a62b20e8\"; username-localhost-8318=\"2|1:0|10:1595324714|23:username-localhost-8318|44:MjMwMjBhN2Y1YjkwNDA3ODg3YTRiMDg3MmY3ZTk4MTg=|bcdde59d5c88c6b7c2b31a762722a5a5e8adb97a98b1635bd3511809ed7f96c3\"; username-localhost-9558=\"2|1:0|10:1595409209|23:username-localhost-9558|44:YTgxNGU0ZDE2YmNiNDdlOGE2NjNjMzdhNzRiZTI1Y2Y=|f9e53fcc7ce0a0c99adbcba3441b6b94566c34480ff8a59e543c0d5c2c4dfd76\"; username-localhost-9093=\"2|1:0|10:1595497666|23:username-localhost-9093|44:NTdlOTUxYTRmMDM4NGFjODg2NmU0ZGI0ZWUxOWRjMjI=|36ee4109710b6f9600b57e4216656c51f1d94b6f45aff4a28be09daa0a1295c8\"; username-localhost-9839=\"2|1:0|10:1595579728|23:username-localhost-9839|44:MmUyNzliODgyMmQ2NDY3NWI3N2Q5MWYyNzI0ZDlhMWI=|bbeb52f7fd890ea9d2a2d24ec85bc52a701522f99e2136d1147a8a61dd98d0a9\"; _xsrf=2|5a20104c|374a5a565a09906f2ac51980a6f75ba9|1595847021; username-localhost-9321=\"2|1:0|10:1595847025|23:username-localhost-9321|44:ZjNmZGVlN2UzZGIyNDdhZTg4YzMxZDA4ZTRkMzUxYTg=|2e6282f6ee38be1e9e5a4d869de2f5fb0c36047825c692abc6ad5b9a61299ec5\"; username-localhost-8938=\"2|1:0|10:1595913685|23:username-localhost-8938|44:ZmYzMGI3Yjg1ZWVmNDhiNzkxYTAwNmJkNzUwOGNmMmI=|00bfff247d0196ed67111d9fe271730db45908635c11eb826307aa241926d986\"; username-localhost-9203=\"2|1:0|10:1596019328|23:username-localhost-9203|44:M2Y1YzczMTA0ZjY0NGIyNWFjYzViZGRjYjJiMDgwZjI=|38ee3a55457d820d3acefde4865de9f1e66494016892d5fb90965946d5c3cf61\"",
+      "Pragma": "no-cache",
+      "Cache-Control": "no-cache"
+    }
+[E 12:02:50.923 LabApp] 500 GET /lab/api/extensions?1596020570430 (10.20.236.34) 8.96ms referer=http://localhost:9203/lab
+[I 12:03:01.731 LabApp] Adapting from protocol version 5.0 (kernel 75c0bedc-4c25-4105-86ba-f6606bf93973) to 5.3 (client).
+[I 12:03:01.885 LabApp] Adapting from protocol version 5.0 (kernel fc95bad2-4733-410a-a796-c7a0b815f189) to 5.3 (client).
+[I 12:03:25.498 LabApp] Starting buffering for 75c0bedc-4c25-4105-86ba-f6606bf93973:28cf222c-f907-403a-9af5-63e2e969d66c
+[I 12:03:25.499 LabApp] Starting buffering for fc95bad2-4733-410a-a796-c7a0b815f189:b0639b4a-0a42-41b6-bc7c-61e56d6f911f
+[W 12:16:41.877 LabApp] Could not determine jupyterlab build status without nodejs
+[I 12:16:42.477 LabApp] Adapting from protocol version 5.0 (kernel fc95bad2-4733-410a-a796-c7a0b815f189) to 5.3 (client).
+[I 12:16:42.944 LabApp] Starting buffering for fc95bad2-4733-410a-a796-c7a0b815f189:030bbab4-2e1a-4bb5-9791-55c42f1654af
+[E 12:16:43.004 LabApp] Uncaught exception GET /lab/api/extensions?1596021402852 (10.20.236.34)
+    HTTPServerRequest(protocol='http', host='localhost:9203', method='GET', uri='/lab/api/extensions?1596021402852', version='HTTP/1.1', remote_ip='10.20.236.34')
+    Traceback (most recent call last):
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 194, in _load_outdated
+        app_options=self.app_options
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+        return self.__get_result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+        raise self._exception
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+        result = self.fn(*self.args, **self.kwargs)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/commands.py", line 541, in get_latest_compatible_package_versions
+        return handler.latest_compatible_package_versions(names)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/commands.py", line 1679, in latest_compatible_package_versions
+        ret = self._run([which('npm'), 'pack'] + keys, cwd=tempdir)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab_server/process.py", line 59, in which
+        raise ValueError(msg)
+    ValueError: Please install Node.js and npm before continuing installation. You may be able to install Node.js from your package manager, from conda, or directly from the Node.js website (https://nodejs.org).
+[W 12:16:43.006 LabApp] Unhandled error
+[E 12:16:43.006 LabApp] {
+      "Host": "localhost:9203",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:79.0) Gecko/20100101 Firefox/79.0",
+      "Accept": "*/*",
+      "Accept-Language": "en-GB,en;q=0.5",
+      "Accept-Encoding": "gzip, deflate",
+      "Referer": "http://localhost:9203/lab",
+      "X-Xsrftoken": "2|5a20104c|374a5a565a09906f2ac51980a6f75ba9|1595847021",
+      "Content-Type": "application/json",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-8888=\"2|1:0|10:1595841276|23:username-localhost-8888|44:YThlZjhiMzAwNDVkNDEyNThhY2JmN2RkMTE1N2Q3NGY=|db2fbf8a2d5ec874efe4b534a78e6f8e17bf592b36a99cce94e5dd9c40ee78d9\"; username-localhost-8889=\"2|1:0|10:1595567059|23:username-localhost-8889|44:NWE0ZTA1OGE3OWNiNGM2MmI1YmI4ZTA0ZWI2Y2I1NTE=|76c9675bf392d0453165139f2a25f7404335426b0317b95205e528757c22156e\"; username-localhost-9417=\"2|1:0|10:1593508551|23:username-localhost-9417|44:OTNkZmJjYjVkMTkzNGYzYThlMTgxZGY0YTA0MWM2MjE=|6f87eaacf3f41aa24cfa1e979ca16c55663fde2aea03d9fefa05177e1b55e7ec\"; username-localhost-8699=\"2|1:0|10:1594032249|23:username-localhost-8699|44:NWZjYzBkMzk0ZWNiNGY4Mzg2NGQ1MjVkMzU5YzQ3ZjU=|2fee082dba01bd027ba8056b60c407a1848c9312029fb606debc117d19bfe0eb\"; username-localhost-9681=\"2|1:0|10:1594113120|23:username-localhost-9681|44:ODA2MmQzZTFkZjg5NGM3OTk2NTI5OTc1MzM0MmJiNGU=|e9965ba9a2c4a5573c5d62d0825d4cbcfe57be38e5dd951b181938a135674779\"; username-localhost-9953=\"2|1:0|10:1594113126|23:username-localhost-9953|44:NWJiMGQ4MmE0YWNmNDM1Mjk0M2VhOTJjOTE0N2Q5NjY=|78b2309db5b3ea5309e123cc9e54b4c06f89c83af11c14f5981881539cc67294\"; username-localhost-8188=\"2|1:0|10:1594285485|23:username-localhost-8188|44:M2ExYWNkNDkwZjRhNGI5YWIwNmMwNDg5N2FiNGJlMDY=|5044ac673f094501803dea2bbad3298e35110b8ccbaeef26f1b478fac9baa5f2\"; username-localhost-9172=\"2|1:0|10:1594285490|23:username-localhost-9172|44:ZWQ0NDU0YmZiMjM0NDhjMmFiODFlNmE3YmJjOWYxZmY=|4e5ee11154fe92b2c4425421618dae7dc88c66730faead3debc16c9e69afc6fb\"; username-localhost-9135=\"2|1:0|10:1594630739|23:username-localhost-9135|44:MGJkZjUxMzk2ZDYwNGZkYzkwMTMxMTA2M2JkZmJmNzU=|d8d51e471ed8870c0c6581b2b14e7d32d46f06670d0919d744cfb18ff21b2372\"; username-localhost-8904=\"2|1:0|10:1594722669|23:username-localhost-8904|44:NjAzOGYxYjgzOGJlNDdjYzk1NTYxNWFjOTU1YzFmMmQ=|e73c1cd7b7f12c46ba20baf70cef1cc0f84d6a0a7c7889a5644b33dcabedcbe9\"; username-localhost-8890=\"2|1:0|10:1594744655|23:username-localhost-8890|44:MjkzYzgwMzZiZDg5NGE3Zjg5MDc2OTZmMTQ3YjZiZTU=|cf0bf944819bc1ade13a81d3273913779c8f49f43c06336aa4b1dc14d5a90a22\"; username-localhost-8967=\"2|1:0|10:1594807904|23:username-localhost-8967|44:NDkyZTcwZGZlNjQxNDdlNzk1ZTkzODA3ZGU2YzNiOTg=|343c54f4ac636e03622b2c5ab302a5e49e75ed4f9f96520d48959622a55ffdba\"; username-localhost-9949=\"2|1:0|10:1594816672|23:username-localhost-9949|44:YTg2YzU1NTA0NTQ2NDIxMzljNjFiMjAzNzZlZThhZWQ=|23e5b5d82a3261dd40f9b978cd0d57b8fedfe61a4a0e2a91fb0edf0e6cfc4294\"; username-localhost-8891=\"2|1:0|10:1594827687|23:username-localhost-8891|44:NWY3MzM5NDQ0ZDU4NDY5MzhjY2ExM2QxY2M1MWQzMTk=|f839c22190faa9f3021021f858a640400cc74bba2a2b49d77bb61e012dd7a72a\"; username-localhost-8892=\"2|1:0|10:1594875714|23:username-localhost-8892|44:YTE0YTA3MmE4NGRkNGUxMGEzYzQ4ZDJhYmI1NzhiNDY=|4ac29e85ae8004fd67420e155fafffbe283aac8e5d1768ecf427ce82e63f4630\"; username-localhost-8951=\"2|1:0|10:1594892710|23:username-localhost-8951|44:MmFmYzU5ZDlkOTNiNGJjYjg5OTk4OTAwY2YxMjJiMTc=|1be4579f1c133c14ee070fca8bffe4ce0a893e044a3bcaf93e28a771d273e66b\"; username-localhost-8899=\"2|1:0|10:1594978266|23:username-localhost-8899|44:YmI3YWI3NWM4NWVjNDJiZDlkMDE4YmJlMzFkYTgzZmE=|892b5a77992c2ccb2ff5c82370f5befe051967e49a39ebca5141bd624970addb\"; username-localhost-9491=\"2|1:0|10:1594978674|23:username-localhost-9491|44:MmMxZDI5NmE1YjcyNGNiYjg3OTAyNDE4MzBlMWEzOTY=|40b91d894be2dcc3c9d0b65e2e06ec9976c99ad359479b0a14ffc4aac1edd8f0\"; username-localhost-8882=\"2|1:0|10:1594994875|23:username-localhost-8882|44:N2RmYzBhNDg4MWNlNDA3ZDlmZWJjNzA3MGMwZWIxMzI=|5d82b07f7f74222817b9beec35db8c79cf94a82052440a0b21af0e19859ed1f8\"; username-localhost-8982=\"2|1:0|10:1595187716|23:username-localhost-8982|44:ODcwZTY4MjBiYzdkNDA1MDg5NDg2NGUzZjkyZjM2NWI=|37379ca64a01a81331726e3f38792696c6ee4a3fbc2ca325506b559a8af76324\"; username-localhost-9024=\"2|1:0|10:1595236822|23:username-localhost-9024|44:YzRlMTUwNjcxYjMwNDU0N2E3NjUxM2NkM2M3NDY4OTQ=|01be2ed68d7d3da961d45b8844585dc618f6b147f58535ae64d7712937e14cd8\"; username-localhost-8937=\"2|1:0|10:1595269727|23:username-localhost-8937|44:NzZkOGRlNGRlMDQwNGY0NjlmYTVkM2ZiODJiYmZjZGU=|0f4cdfa051265fc934c17a636ddd97296d83ece9c3df24bace8987f3a62b20e8\"; username-localhost-8318=\"2|1:0|10:1595324714|23:username-localhost-8318|44:MjMwMjBhN2Y1YjkwNDA3ODg3YTRiMDg3MmY3ZTk4MTg=|bcdde59d5c88c6b7c2b31a762722a5a5e8adb97a98b1635bd3511809ed7f96c3\"; username-localhost-9558=\"2|1:0|10:1595409209|23:username-localhost-9558|44:YTgxNGU0ZDE2YmNiNDdlOGE2NjNjMzdhNzRiZTI1Y2Y=|f9e53fcc7ce0a0c99adbcba3441b6b94566c34480ff8a59e543c0d5c2c4dfd76\"; username-localhost-9093=\"2|1:0|10:1595497666|23:username-localhost-9093|44:NTdlOTUxYTRmMDM4NGFjODg2NmU0ZGI0ZWUxOWRjMjI=|36ee4109710b6f9600b57e4216656c51f1d94b6f45aff4a28be09daa0a1295c8\"; username-localhost-9839=\"2|1:0|10:1595579728|23:username-localhost-9839|44:MmUyNzliODgyMmQ2NDY3NWI3N2Q5MWYyNzI0ZDlhMWI=|bbeb52f7fd890ea9d2a2d24ec85bc52a701522f99e2136d1147a8a61dd98d0a9\"; username-localhost-9321=\"2|1:0|10:1595847025|23:username-localhost-9321|44:ZjNmZGVlN2UzZGIyNDdhZTg4YzMxZDA4ZTRkMzUxYTg=|2e6282f6ee38be1e9e5a4d869de2f5fb0c36047825c692abc6ad5b9a61299ec5\"; username-localhost-8938=\"2|1:0|10:1595913685|23:username-localhost-8938|44:ZmYzMGI3Yjg1ZWVmNDhiNzkxYTAwNmJkNzUwOGNmMmI=|00bfff247d0196ed67111d9fe271730db45908635c11eb826307aa241926d986\"; username-localhost-9203=\"2|1:0|10:1596019328|23:username-localhost-9203|44:M2Y1YzczMTA0ZjY0NGIyNWFjYzViZGRjYjJiMDgwZjI=|38ee3a55457d820d3acefde4865de9f1e66494016892d5fb90965946d5c3cf61\"; _xsrf=2|5a20104c|374a5a565a09906f2ac51980a6f75ba9|1595847021",
+      "Pragma": "no-cache",
+      "Cache-Control": "no-cache"
+    }
+[E 12:16:43.006 LabApp] 500 GET /lab/api/extensions?1596021402852 (10.20.236.34) 11.04ms referer=http://localhost:9203/lab
+[E 12:16:44.590 LabApp] Uncaught exception GET /lab/api/extensions?1596021404547 (10.20.236.34)
+    HTTPServerRequest(protocol='http', host='localhost:9203', method='GET', uri='/lab/api/extensions?1596021404547', version='HTTP/1.1', remote_ip='10.20.236.34')
+    Traceback (most recent call last):
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 194, in _load_outdated
+        app_options=self.app_options
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/_base.py", line 425, in result
+        return self.__get_result()
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/_base.py", line 384, in __get_result
+        raise self._exception
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+        result = self.fn(*self.args, **self.kwargs)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/commands.py", line 541, in get_latest_compatible_package_versions
+        return handler.latest_compatible_package_versions(names)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab/commands.py", line 1679, in latest_compatible_package_versions
+        ret = self._run([which('npm'), 'pack'] + keys, cwd=tempdir)
+      File "/home/baker02/miniconda3/envs/scRNA_env/lib/python3.6/site-packages/jupyterlab_server/process.py", line 59, in which
+        raise ValueError(msg)
+    ValueError: Please install Node.js and npm before continuing installation. You may be able to install Node.js from your package manager, from conda, or directly from the Node.js website (https://nodejs.org).
+[W 12:16:44.592 LabApp] Unhandled error
+[E 12:16:44.592 LabApp] {
+      "Host": "localhost:9203",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:79.0) Gecko/20100101 Firefox/79.0",
+      "Accept": "*/*",
+      "Accept-Language": "en-GB,en;q=0.5",
+      "Accept-Encoding": "gzip, deflate",
+      "Referer": "http://localhost:9203/lab",
+      "X-Xsrftoken": "2|5a20104c|374a5a565a09906f2ac51980a6f75ba9|1595847021",
+      "Content-Type": "application/json",
+      "Connection": "keep-alive",
+      "Cookie": "username-localhost-8888=\"2|1:0|10:1595841276|23:username-localhost-8888|44:YThlZjhiMzAwNDVkNDEyNThhY2JmN2RkMTE1N2Q3NGY=|db2fbf8a2d5ec874efe4b534a78e6f8e17bf592b36a99cce94e5dd9c40ee78d9\"; username-localhost-8889=\"2|1:0|10:1595567059|23:username-localhost-8889|44:NWE0ZTA1OGE3OWNiNGM2MmI1YmI4ZTA0ZWI2Y2I1NTE=|76c9675bf392d0453165139f2a25f7404335426b0317b95205e528757c22156e\"; username-localhost-9417=\"2|1:0|10:1593508551|23:username-localhost-9417|44:OTNkZmJjYjVkMTkzNGYzYThlMTgxZGY0YTA0MWM2MjE=|6f87eaacf3f41aa24cfa1e979ca16c55663fde2aea03d9fefa05177e1b55e7ec\"; username-localhost-8699=\"2|1:0|10:1594032249|23:username-localhost-8699|44:NWZjYzBkMzk0ZWNiNGY4Mzg2NGQ1MjVkMzU5YzQ3ZjU=|2fee082dba01bd027ba8056b60c407a1848c9312029fb606debc117d19bfe0eb\"; username-localhost-9681=\"2|1:0|10:1594113120|23:username-localhost-9681|44:ODA2MmQzZTFkZjg5NGM3OTk2NTI5OTc1MzM0MmJiNGU=|e9965ba9a2c4a5573c5d62d0825d4cbcfe57be38e5dd951b181938a135674779\"; username-localhost-9953=\"2|1:0|10:1594113126|23:username-localhost-9953|44:NWJiMGQ4MmE0YWNmNDM1Mjk0M2VhOTJjOTE0N2Q5NjY=|78b2309db5b3ea5309e123cc9e54b4c06f89c83af11c14f5981881539cc67294\"; username-localhost-8188=\"2|1:0|10:1594285485|23:username-localhost-8188|44:M2ExYWNkNDkwZjRhNGI5YWIwNmMwNDg5N2FiNGJlMDY=|5044ac673f094501803dea2bbad3298e35110b8ccbaeef26f1b478fac9baa5f2\"; username-localhost-9172=\"2|1:0|10:1594285490|23:username-localhost-9172|44:ZWQ0NDU0YmZiMjM0NDhjMmFiODFlNmE3YmJjOWYxZmY=|4e5ee11154fe92b2c4425421618dae7dc88c66730faead3debc16c9e69afc6fb\"; username-localhost-9135=\"2|1:0|10:1594630739|23:username-localhost-9135|44:MGJkZjUxMzk2ZDYwNGZkYzkwMTMxMTA2M2JkZmJmNzU=|d8d51e471ed8870c0c6581b2b14e7d32d46f06670d0919d744cfb18ff21b2372\"; username-localhost-8904=\"2|1:0|10:1594722669|23:username-localhost-8904|44:NjAzOGYxYjgzOGJlNDdjYzk1NTYxNWFjOTU1YzFmMmQ=|e73c1cd7b7f12c46ba20baf70cef1cc0f84d6a0a7c7889a5644b33dcabedcbe9\"; username-localhost-8890=\"2|1:0|10:1594744655|23:username-localhost-8890|44:MjkzYzgwMzZiZDg5NGE3Zjg5MDc2OTZmMTQ3YjZiZTU=|cf0bf944819bc1ade13a81d3273913779c8f49f43c06336aa4b1dc14d5a90a22\"; username-localhost-8967=\"2|1:0|10:1594807904|23:username-localhost-8967|44:NDkyZTcwZGZlNjQxNDdlNzk1ZTkzODA3ZGU2YzNiOTg=|343c54f4ac636e03622b2c5ab302a5e49e75ed4f9f96520d48959622a55ffdba\"; username-localhost-9949=\"2|1:0|10:1594816672|23:username-localhost-9949|44:YTg2YzU1NTA0NTQ2NDIxMzljNjFiMjAzNzZlZThhZWQ=|23e5b5d82a3261dd40f9b978cd0d57b8fedfe61a4a0e2a91fb0edf0e6cfc4294\"; username-localhost-8891=\"2|1:0|10:1594827687|23:username-localhost-8891|44:NWY3MzM5NDQ0ZDU4NDY5MzhjY2ExM2QxY2M1MWQzMTk=|f839c22190faa9f3021021f858a640400cc74bba2a2b49d77bb61e012dd7a72a\"; username-localhost-8892=\"2|1:0|10:1594875714|23:username-localhost-8892|44:YTE0YTA3MmE4NGRkNGUxMGEzYzQ4ZDJhYmI1NzhiNDY=|4ac29e85ae8004fd67420e155fafffbe283aac8e5d1768ecf427ce82e63f4630\"; username-localhost-8951=\"2|1:0|10:1594892710|23:username-localhost-8951|44:MmFmYzU5ZDlkOTNiNGJjYjg5OTk4OTAwY2YxMjJiMTc=|1be4579f1c133c14ee070fca8bffe4ce0a893e044a3bcaf93e28a771d273e66b\"; username-localhost-8899=\"2|1:0|10:1594978266|23:username-localhost-8899|44:YmI3YWI3NWM4NWVjNDJiZDlkMDE4YmJlMzFkYTgzZmE=|892b5a77992c2ccb2ff5c82370f5befe051967e49a39ebca5141bd624970addb\"; username-localhost-9491=\"2|1:0|10:1594978674|23:username-localhost-9491|44:MmMxZDI5NmE1YjcyNGNiYjg3OTAyNDE4MzBlMWEzOTY=|40b91d894be2dcc3c9d0b65e2e06ec9976c99ad359479b0a14ffc4aac1edd8f0\"; username-localhost-8882=\"2|1:0|10:1594994875|23:username-localhost-8882|44:N2RmYzBhNDg4MWNlNDA3ZDlmZWJjNzA3MGMwZWIxMzI=|5d82b07f7f74222817b9beec35db8c79cf94a82052440a0b21af0e19859ed1f8\"; username-localhost-8982=\"2|1:0|10:1595187716|23:username-localhost-8982|44:ODcwZTY4MjBiYzdkNDA1MDg5NDg2NGUzZjkyZjM2NWI=|37379ca64a01a81331726e3f38792696c6ee4a3fbc2ca325506b559a8af76324\"; username-localhost-9024=\"2|1:0|10:1595236822|23:username-localhost-9024|44:YzRlMTUwNjcxYjMwNDU0N2E3NjUxM2NkM2M3NDY4OTQ=|01be2ed68d7d3da961d45b8844585dc618f6b147f58535ae64d7712937e14cd8\"; username-localhost-8937=\"2|1:0|10:1595269727|23:username-localhost-8937|44:NzZkOGRlNGRlMDQwNGY0NjlmYTVkM2ZiODJiYmZjZGU=|0f4cdfa051265fc934c17a636ddd97296d83ece9c3df24bace8987f3a62b20e8\"; username-localhost-8318=\"2|1:0|10:1595324714|23:username-localhost-8318|44:MjMwMjBhN2Y1YjkwNDA3ODg3YTRiMDg3MmY3ZTk4MTg=|bcdde59d5c88c6b7c2b31a762722a5a5e8adb97a98b1635bd3511809ed7f96c3\"; username-localhost-9558=\"2|1:0|10:1595409209|23:username-localhost-9558|44:YTgxNGU0ZDE2YmNiNDdlOGE2NjNjMzdhNzRiZTI1Y2Y=|f9e53fcc7ce0a0c99adbcba3441b6b94566c34480ff8a59e543c0d5c2c4dfd76\"; username-localhost-9093=\"2|1:0|10:1595497666|23:username-localhost-9093|44:NTdlOTUxYTRmMDM4NGFjODg2NmU0ZGI0ZWUxOWRjMjI=|36ee4109710b6f9600b57e4216656c51f1d94b6f45aff4a28be09daa0a1295c8\"; username-localhost-9839=\"2|1:0|10:1595579728|23:username-localhost-9839|44:MmUyNzliODgyMmQ2NDY3NWI3N2Q5MWYyNzI0ZDlhMWI=|bbeb52f7fd890ea9d2a2d24ec85bc52a701522f99e2136d1147a8a61dd98d0a9\"; username-localhost-9321=\"2|1:0|10:1595847025|23:username-localhost-9321|44:ZjNmZGVlN2UzZGIyNDdhZTg4YzMxZDA4ZTRkMzUxYTg=|2e6282f6ee38be1e9e5a4d869de2f5fb0c36047825c692abc6ad5b9a61299ec5\"; username-localhost-8938=\"2|1:0|10:1595913685|23:username-localhost-8938|44:ZmYzMGI3Yjg1ZWVmNDhiNzkxYTAwNmJkNzUwOGNmMmI=|00bfff247d0196ed67111d9fe271730db45908635c11eb826307aa241926d986\"; username-localhost-9203=\"2|1:0|10:1596019328|23:username-localhost-9203|44:M2Y1YzczMTA0ZjY0NGIyNWFjYzViZGRjYjJiMDgwZjI=|38ee3a55457d820d3acefde4865de9f1e66494016892d5fb90965946d5c3cf61\"; _xsrf=2|5a20104c|374a5a565a09906f2ac51980a6f75ba9|1595847021",
+      "Pragma": "no-cache",
+      "Cache-Control": "no-cache"
+    }
+[E 12:16:44.592 LabApp] 500 GET /lab/api/extensions?1596021404547 (10.20.236.34) 9.74ms referer=http://localhost:9203/lab
+[I 12:16:44.667 LabApp] Adapting from protocol version 5.0 (kernel 75c0bedc-4c25-4105-86ba-f6606bf93973) to 5.3 (client).
+[I 12:16:44.893 LabApp] Adapting from protocol version 5.0 (kernel fc95bad2-4733-410a-a796-c7a0b815f189) to 5.3 (client).
+[I 12:17:17.198 LabApp] Saving file at /notebooks/005_nems_dev.ipynb
+[I 12:17:17.200 LabApp] Saving 005_nems_dev.ipynb
+[I 12:17:45.059 LabApp] Saving file at /notebooks/005_nems_dev.ipynb
+[I 12:17:45.060 LabApp] Saving 005_nems_dev.ipynb
+[I 12:17:46.159 LabApp] Saving file at /notebooks/005_nems_dev.ipynb
+[I 12:17:46.160 LabApp] Saving 005_nems_dev.ipynb
+[I 12:21:46.345 LabApp] Saving file at /notebooks/005_nems_dev.ipynb
+[I 12:21:46.346 LabApp] Saving 005_nems_dev.ipynb
+[I 12:23:46.546 LabApp] Saving file at /notebooks/005_nems_dev.ipynb
+[I 12:23:46.548 LabApp] Saving 005_nems_dev.ipynb
+[W 14:47:42.858 LabApp] 400 GET /api/contents/notebooks/custom.rda?format=text&type=file&content=1&1596030462801 (10.20.236.34): /mnt/scratcha/fmlab/baker02/ER_Model/E2V2/Initial_ER_Interactome_Network_Model/notebooks/custom.rda is not UTF-8 encoded
+[W 14:47:43.464 LabApp] /mnt/scratcha/fmlab/baker02/ER_Model/E2V2/Initial_ER_Interactome_Network_Model/notebooks/custom.rda is not UTF-8 encoded
+[W 14:47:43.464 LabApp] 400 GET /api/contents/notebooks/custom.rda?format=text&type=file&content=1&1596030462801 (10.20.236.34) 616.22ms referer=http://localhost:9203/lab
+[I 14:48:06.072 LabApp] Saving file at /notebooks/005_nems_dev.ipynb
+[I 14:48:06.073 LabApp] Saving 005_nems_dev.ipynb

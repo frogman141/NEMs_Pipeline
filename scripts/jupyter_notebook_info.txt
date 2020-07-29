@@ -1,7 +1,7 @@
 
 MacOS or linux terminal command to create your ssh tunnel
-ssh -N -L 9321:clust1-node-1:9321 baker02@clust1-headnode-1.cri.camres.org
+ssh -N -L 9203:clust1-node-10:9203 baker02@clust1-headnode-1.cri.camres.org
 
 Use a Browser on your local machine to go to:
-localhost:9321  (prefix w/ https:// if using password)
+localhost:9203  (prefix w/ https:// if using password)
 

@@ -1,13 +1,15 @@
 digraph G {
  "SUMO1" ;
- "EP300" ;
- "NR2F2" ;
  "SUMO3" ;
- "CREBBP" ;
- "NCOA3:TFAP2C:NRIP..." ;
- edge [dir=back] "SUMO1" -> "NR2F2" ;
- edge [dir=back] "EP300" -> "NR2F2" ;
- edge [dir=back] "NR2F2" -> "SUMO3" ;
- edge [dir=back] "SUMO3" -> "CREBBP" ;
- edge [dir=back] "CREBBP" -> "NCOA3:TFAP2C:NRIP..." ;
+ "GRHL2" ;
+ "NR2F2" ;
+ "EP300" ;
+ "NCOA3" ;
+ "TFAP2C:CREBBP:NRI..." ;
+ edge [dir=back] "SUMO1" -> "SUMO3" ;
+ edge [dir=back] "SUMO3" -> "GRHL2" ;
+ edge [dir=back] "GRHL2" -> "NCOA3" ;
+ edge [dir=back] "NR2F2" -> "NCOA3" ;
+ edge [dir=back] "EP300" -> "NCOA3" ;
+ edge [dir=back] "NCOA3" -> "TFAP2C:CREBBP:NRI..." ;
 }
