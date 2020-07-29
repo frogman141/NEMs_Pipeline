@@ -18,7 +18,7 @@ cluster=clust1-headnode-1.cri.camres.org
 # print tunneling instructions jupyter-log
 echo -e "
 MacOS or linux terminal command to create your ssh tunnel
-ssh -N -L ${port}:${node}:${port} baker02@clust1-headnode-1.cri.camres.org
+ssh -N -L ${port}:${node}:${port} ${user}@clust1-headnode-1.cri.camres.org
 
 Use a Browser on your local machine to go to:
 localhost:${port}  (prefix w/ https:// if using password)
