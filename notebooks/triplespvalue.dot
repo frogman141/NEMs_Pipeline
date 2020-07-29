@@ -1,0 +1,7 @@
+digraph G {
+ "SUMO3:NCOA3:SUMO1..." ;
+ "NRIP1" ;
+ "TRIM33" ;
+ edge [dir=back] "SUMO3:NCOA3:SUMO1..." -> "NRIP1" ;
+ edge [dir=back] "SUMO3:NCOA3:SUMO1..." -> "TRIM33" ;
+}

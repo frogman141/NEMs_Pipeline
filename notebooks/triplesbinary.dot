@@ -1,0 +1,11 @@
+digraph G {
+ "SUMO1" ;
+ "GRHL2" ;
+ "SUMO3" ;
+ "EP300" ;
+ "NCOA3:TFAP2C:CREB..." ;
+ edge [dir=back] "SUMO1" -> "GRHL2" ;
+ edge [dir=back] "GRHL2" -> "SUMO3" ;
+ edge [dir=back] "SUMO3" -> "EP300" ;
+ edge [dir=back] "EP300" -> "NCOA3:TFAP2C:CREB..." ;
+}

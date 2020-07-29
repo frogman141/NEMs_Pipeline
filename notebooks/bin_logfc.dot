@@ -1,0 +1,29 @@
+digraph G {
+ "SUMO1" ;
+ "SUMO3" ;
+ "GRHL2" ;
+ "EP300" ;
+ "DPF2" ;
+ "ESRRA" ;
+ "NR2F2" ;
+ "ZMIZ1:SUMO2:RARA:..." ;
+ "FOXA1" ;
+ "NCOA3" ;
+ "TFAP2C" ;
+ "CREBBP:TRIM28" ;
+ "NRIP1:TRIM33:GATA3" ;
+ edge [dir=back] "SUMO1" -> "SUMO3" ;
+ edge [dir=back] "SUMO1" -> "GRHL2" ;
+ edge [dir=back] "SUMO3" -> "EP300" ;
+ edge [dir=back] "SUMO3" -> "DPF2" ;
+ edge [dir=back] "GRHL2" -> "DPF2" ;
+ edge [dir=back] "DPF2" -> "ESRRA" ;
+ edge [dir=back] "EP300" -> "NR2F2" ;
+ edge [dir=back] "ESRRA" -> "NR2F2" ;
+ edge [dir=back] "NR2F2" -> "ZMIZ1:SUMO2:RARA:..." ;
+ edge [dir=back] "ZMIZ1:SUMO2:RARA:..." -> "FOXA1" ;
+ edge [dir=back] "FOXA1" -> "NCOA3" ;
+ edge [dir=back] "NCOA3" -> "TFAP2C" ;
+ edge [dir=back] "TFAP2C" -> "CREBBP:TRIM28" ;
+ edge [dir=back] "CREBBP:TRIM28" -> "NRIP1:TRIM33:GATA3" ;
+}
